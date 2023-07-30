@@ -22,7 +22,7 @@ public class BaseTests  {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://accounts.google.com/InteractiveLogin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AeDOFXhrWklvgsT_w7UzoXRLa37btnAvGtI35V34MqUmHT7QnosiM3xQACeCpIsiCxkzRqZehZgT&osid=1&passive=1209600&service=mail");
+		driver.get("https://accounts.google.com");
 		String title = driver.getTitle();
 		System.out.println(title);
 		
